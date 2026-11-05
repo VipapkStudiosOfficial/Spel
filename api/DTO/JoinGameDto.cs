@@ -1,4 +1,4 @@
-namespace Spel.Api.DTOs;
+namespace Spel.Api.DTO;
 
 public class JoinGameDto
 {

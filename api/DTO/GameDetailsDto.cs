@@ -1,5 +1,5 @@
 using Spel.Api.Models;
-namespace Spel.Api.DTOs;
+namespace Spel.Api.DTO;
 
 public class GameDetailsDto
 {

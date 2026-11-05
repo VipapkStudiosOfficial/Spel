@@ -2,6 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using Spel.Api.Data;
 using Spel.Api.Models;
 using Microsoft.OpenApi;
+using Spel.Api.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -30,6 +31,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlSer
 builder.Services.AddIdentityApiEndpoints<ApplicationUser>().AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddAuthorization();
 builder.Services.AddControllers();
+builder.Services.AddScoped<GameService>();
 
 var app = builder.Build();
 

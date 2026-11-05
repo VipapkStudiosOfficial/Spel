@@ -3666,19 +3666,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Abhishek Paragh\\.nuget\\packages\\": {}
+    "C:\\Users\\Parag\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Abhishek Paragh\\Desktop\\Spel\\api\\api.csproj",
+      "projectUniqueName": "C:\\Users\\Parag\\Documents\\HHS\\2026-2027\\Herkansing\\Spel\\api\\api.csproj",
       "projectName": "api",
-      "projectPath": "C:\\Users\\Abhishek Paragh\\Desktop\\Spel\\api\\api.csproj",
-      "packagesPath": "C:\\Users\\Abhishek Paragh\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Abhishek Paragh\\Desktop\\Spel\\api\\obj\\",
+      "projectPath": "C:\\Users\\Parag\\Documents\\HHS\\2026-2027\\Herkansing\\Spel\\api\\api.csproj",
+      "packagesPath": "C:\\Users\\Parag\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Parag\\Documents\\HHS\\2026-2027\\Herkansing\\Spel\\api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Abhishek Paragh\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Parag\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net10.0"

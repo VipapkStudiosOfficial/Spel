@@ -337,3 +337,4 @@ C:\Users\Abhishek Paragh\Desktop\Spel\api\obj\Debug\net10.0\refint\api.dll
 C:\Users\Abhishek Paragh\Desktop\Spel\api\obj\Debug\net10.0\api.pdb
 C:\Users\Abhishek Paragh\Desktop\Spel\api\obj\Debug\net10.0\api.genruntimeconfig.cache
 C:\Users\Abhishek Paragh\Desktop\Spel\api\obj\Debug\net10.0\ref\api.dll
+C:\Users\Parag\Documents\HHS\2026-2027\Herkansing\Spel\api\obj\Debug\net10.0\api.sourcelink.json
