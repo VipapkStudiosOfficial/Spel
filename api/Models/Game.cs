@@ -18,13 +18,13 @@ public class Game
     public string CreatorId { get; set; } = string.Empty;
 
     // Nog geen spelers bij nieuw spel
-    public string? CurrentPlayerId { get; set; }
+    public int? CurrentPlayerId { get; set; }
 
     // Standaard ronde bij nieuw spel is 1
     public int Round { get; set; } = 1;
 
     // Nog geen winnaar bij nieuw spel
-    public string? WinnerId { get; set; }
+    public int? WinnerId { get; set; }
 
     // Gelijktijdige wijzigingen controleren
     public int Version { get; set; } = 0;
@@ -33,6 +33,10 @@ public class Game
     public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
 
     public ApplicationUser? Creator { get; set; }
+
+    public GameParticipant? CurrentPlayer { get; set; }
+
+    public GameParticipant? Winner { get; set; }
 
     // Collectiebeheer van deelnemers, kaarten en acties
     public ICollection<GameParticipant> Participants { get; set; }

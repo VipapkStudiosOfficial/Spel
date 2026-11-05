@@ -95,5 +95,29 @@ public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
             .WithMany()
             .HasForeignKey(ga => ga.TargetPawnId)
             .OnDelete(DeleteBehavior.Restrict);
+
+        modelBuilder.Entity<GameParticipant>()
+            .HasIndex(gp => new { gp.GameId, gp.SeatOrder })
+            .IsUnique();
+
+        modelBuilder.Entity<GameParticipant>()
+            .HasIndex(gp => new { gp.GameId, gp.Color })
+            .IsUnique();
+
+        modelBuilder.Entity<Game>()
+            .HasOne(g => g.CurrentPlayer)
+            .WithMany()
+            .HasForeignKey(g => g.CurrentPlayerId)
+            .OnDelete(DeleteBehavior.Restrict);
+
+        modelBuilder.Entity<Game>()
+            .HasOne(g => g.Winner)
+            .WithMany()
+            .HasForeignKey(g => g.WinnerId)
+            .OnDelete(DeleteBehavior.Restrict);
+
+        modelBuilder.Entity<Game>()
+            .Property(g => g.Version)
+            .IsConcurrencyToken();
     }
 }
